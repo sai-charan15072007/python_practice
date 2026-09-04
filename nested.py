@@ -1,0 +1,13 @@
+students={
+         101:{
+        "name":"E>Bhavani",
+        "age":"19",
+        "place":"america"
+    },
+    102:{
+        "name":"harshitha",
+        "age":"19",
+        "place":"canada"
+    }
+}
+print(students[102])

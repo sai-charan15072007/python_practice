@@ -1,18 +1,12 @@
-class Animal:
-    def sound(self):
-        print("Animal makes a sound")
-class Dog(Animal):
-    def sound(self):
-        print("Dog barks")
-class Cat(Animal):
-    def sound(self):
-        print("cat meows")
-class Cow(Animal):
-    def sound(self):
-        print("cow moos")
-d=Dog()
-c=Cat()
-w=Cow()
-d.sound()
-c.sound()
-w.sound()                                                   
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def __str__(self):
+        return f"Student(Name={self.name}, Marks={self.marks})"
+    def __repr__(self):
+        return f"Student('{self.name}', {self.marks})"
+    
+s = Student("Rahul", 90)
+print(s)

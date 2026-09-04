@@ -1,10 +1,10 @@
-class Employee:
-    def _init_(self,emp_name):
-        self.emp_name=emp_name
-    def _eq_(self,other_name):
-        return self.emp_name==other_name.emp_name
-e1=Employee("madhavi")
-e2=Employee("suchithra")
-e3=Employee("madhavi")
-print(e1==e2)
-print(e1==e3)
+class student:
+    def __init__(self,name):
+        self.name=name
+    def __eq__(self,age):
+        return self.name==age.name
+s1=student("13")
+s2=student("rahul")
+s3=student("13")
+print(s1==s2)
+print(s2==s3)
